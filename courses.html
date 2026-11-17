@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수강 과목 | 홍길동</title>
+  <meta name="description" content="홍길동이 수강하는 과목 표입니다.">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>홍길동의 페이지</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">처음</a></li>
+        <li><a href="about.html">자기소개</a></li>
+        <li><a href="courses.html">수강 과목</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>수강 과목</h2>
+    <div class="table-wrap">
+    <table class="course-table">
+        <caption>개설 과목</caption>
+        <thead>
+          <tr>
+            <th>과목코드</th>
+            <th>과목명</th>
+            <th>학점</th>
+            <th>요일</th>
+            <th>시간</th>
+            <th>정원</th>
+            <th>신청</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CS101</td>
+            <td>웹 프로그래밍 기초</td>
+            <td class="num">3</td>
+            <td>월</td>
+            <td rowspan="2">09:00–12:00</td>
+            <td class="num">30</td>
+            <td><a href="https://httpbin.org/get?course=CS101">신청</a></td>
+          </tr>
+          <tr>
+            <td>CS102</td>
+            <td>자바 입문</td>
+            <td class="num">3</td>
+            <td>화</td>
+            <td class="num">30</td>
+            <td><a href="https://httpbin.org/get?course=CS102">신청</a></td>
+          </tr>
+          <tr>
+            <td>DB201</td>
+            <td>데이터베이스</td>
+            <td class="num">2</td>
+            <td>수</td>
+            <td rowspan="2">13:00–15:00</td>
+            <td class="num">25</td>
+            <td><a href="https://httpbin.org/get?course=DB201">신청</a></td>
+          </tr>
+          <tr>
+            <td>CS103</td>
+            <td>알고리즘 기초</td>
+            <td class="num">2</td>
+            <td>목</td>
+            <td class="num">25</td>
+            <td><a href="https://httpbin.org/get?course=CS103">신청</a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="2">총 학점</th>
+            <td class="num">10</td>
+            <td colspan="4"></td>
+          </tr>
+        </tfoot>
+    </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 홍길동</p>
+  </footer>
+</body>
+</html>

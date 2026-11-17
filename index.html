@@ -1,49 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>지리산의 소개</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홈 | 홍길동</title>
+  <meta name="description" content="웹 개발을 배우는 홍길동의 자기소개 사이트입니다.">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>지리산</h1>
-    </header>
+  <header>
+    <h1>홍길동의 페이지</h1>
     <nav>
-        <h2>바로가기링크</h2>
-        <ul>
-            <li><a href="profile.html">프로필 보기</a></li>
-            <li><a href="https://github.com" target="_blank">원격저장소GitHub</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">처음</a></li>
+        <li><a href="about.html">자기소개</a></li>
+        <li><a href="courses.html">수강 과목</a></li>
+      </ul>
     </nav>
-    <main>
-        <p>안녕하세요. 저는 지리산입니다.</p>
-    <img src="images/profile.jpg" alt="지리산" width="200">
+  </header>
+
+  <main>
     <section>
-        <h2>좋아하는것</h2>
-        <ol>
-            <li>돈</li>
-            <li>음식
-                <ul>
-                    <li>돈까스</li>
-                    <li>치킨</li>
-                </ul>
-            </li>
-            <li>취미
-                <ul>
-                    <li>게임</li>
-                    <li>운동</li>
-                </ul>
-            </li>
-        </ol>
+      <h2>환영합니다</h2>
+      <img src="images/cat.png" width="160" alt="웃고 있는 고양이 그림">
+      <p>웹 개발을 배우며 만든 <strong>첫 번째 사이트</strong>입니다.</p>
     </section>
-    <section>    
-        <h2>연락처</h2>
-            <p>010-0000-0000</p>
+
+    <section>
+      <h2>요즘 배우는 것</h2>
+      <div class="cards">
+        <article class="card"><h3>터미널과 Git</h3><p>매일 커밋으로 기록을 남긴다</p></article>
+        <article class="card"><h3>HTML</h3><p>제목, 메뉴, 표, 폼에 뜻을 붙인다</p></article>
+        <article class="card"><h3>CSS</h3><p>모양을 입히고 Flex로 배치한다</p></article>
+      </div>
+      <p><a href="https://developer.mozilla.org/ko/" target="_blank">MDN에서 더 보기</a></p>
+      <p><a href="about.html#contact">연락하기</a></p>
     </section>
-    </main>
-    <footer>
-       <p>© 2026 홍길동</p>
-    </footer>
+  </main>
+
+  <footer>
+    <p>&copy; 홍길동</p>
+  </footer>
 </body>
 </html>

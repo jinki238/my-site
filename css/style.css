@@ -1,0 +1,129 @@
+/* 0. 상자 크기 계산 방식: 테두리까지 포함해서 잰다 (7일차) */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* 시연: 머리 (속성 6개) */
+header {
+  background: #1f2a44;
+  color: white;
+  padding: 24px 16px;
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  border-bottom: 4px solid #f2b134;
+
+  /* 7일차: 왼쪽 이름, 오른쪽 메뉴 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 { margin: 0; }
+
+/* 7일차: 메뉴를 가로 한 줄로 */
+nav ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 실습 1: 꼬리 (시연에서 본 속성으로) */
+footer {
+  background: #eef1f6;
+  color: #666;
+  padding: 16px;
+  text-align: center;
+  font-size: 0.875rem;
+  border-top: 1px solid #ddd;
+}
+
+/* 실습 2: 정리표에서 골라 하나씩 더 */
+body {
+  margin: 0;
+  font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+h2 {
+  color: #1f2a44;
+  border-bottom: 2px solid #eef1f6;
+  padding-bottom: 4px;
+}
+nav a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+nav a:hover { text-decoration: underline; }
+/* 7일차: 본문 가운데 */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+main a { color: #2f6db5; }
+
+/* ---------- 8일차 ---------- */
+
+/* 사진이 화면을 뚫지 않게 */
+img { max-width: 100%; height: auto; }
+
+/* 카드 (index.html 요즘 배우는 것) */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.card {
+  flex: 1 1 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+.card h3 { margin-top: 0; color: #1f2a44; }
+
+/* 연락 폼 */
+form p { margin: 0 0 12px; }
+label { display: block; font-weight: 700; margin-bottom: 4px; }
+input, select, textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+button {
+  padding: 8px 16px;
+  background: #1f2a44;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 수강 과목 표 */
+.course-table { border-collapse: collapse; }
+.course-table th,
+.course-table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+.course-table thead th { background: #1f2a44; color: white; }
+.course-table caption { font-weight: 700; margin-bottom: 8px; }
+.course-table .num { text-align: right; }
+.course-table tfoot { background: #f4f6f8; font-weight: 700; }
+
+/* 표가 좁은 화면을 뚫지 않게: 표만 가로로 밀어 보기 */
+.table-wrap { overflow-x: auto; }
+
+/* 좁은 화면 (599px 이하): 파일 맨 아래 */
+@media (max-width: 599px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 16px;
+  }
+  nav ul { flex-wrap: wrap; }
+}

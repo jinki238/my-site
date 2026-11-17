@@ -1,68 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>지리산 프로필</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자기소개 | 홍길동</title>
+  <meta name="description" content="홍길동의 자기소개와 앞으로 만들 것, 연락 폼이 있습니다.">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>지리산</h1>
-    </header>
+  <header>
+    <h1>홍길동의 페이지</h1>
     <nav>
-        <h2>바로가기링크</h2>
-        <ul>
-            <li><a href="profile.html">프로필 보기</a></li>
-            <li><a href="https://github.com" target="_blank">원격저장소GitHub</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">처음</a></li>
+        <li><a href="about.html">자기소개</a></li>
+        <li><a href="courses.html">수강 과목</a></li>
+      </ul>
     </nav>
-    <p><a href="index.html">홈으로 돌아가기</a></p>
-    <p><a href="#contact">연락처 및 이메일 정보 바로가기</a></p>
-    <main>
-        <h2>1.최근 관심사</h2>
-        <p>최근에는 웹 개발과 프로그래밍에 관심을 가지고 있습니다.</p>
-        <h2>2.경력 및 경험</h2>
-        <p>저는 다양한 프로젝트에서 웹 개발자로 활동한 경험이 있습니다.</p>
-        <h2>3.앞으로의 목표</h2>
-    <p>저는 향후 웹 개발 분야에서 더 많은 경험을 쌓고, 기술을 발전시키고자 합니다.</p>
-    
-    <h2>배우고 싶은 기술</h2>
-    <ul>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>JavaScript</li>
-    </ul>
+  </header>
 
-   <section id="contact">
-     <h2>연락하기</h2>
-     <form action="https://httpbin.org/post" method="post">
-       <p>
-         <label for="c-name">이름</label>
-         <input type="text" id="c-name" name="name" required>
-       </p>
-       <p>
-         <label for="c-email">이메일</label>
-         <input type="email" id="c-email" name="email" required>
-       </p>
-       <p>
-         <label for="c-type">문의 종류</label>
-         <select id="c-type" name="type">
-           <option value="project">프로젝트 제안</option>
-           <option value="question">질문</option>
-           <option value="etc">기타</option>
-         </select>
-       </p>
-       <p>
-         <label for="c-msg">내용</label>
-         <textarea id="c-msg" name="message" rows="5" required></textarea>
-       </p>
-       <p><button type="submit">보내기</button></p>
-     </form>
-     <p>※ 연습용 폼입니다. 입력한 내용은 연습 서버(httpbin.org)로만 전송됩니다.</p>
-   </section>
-    </main>
-    <footer>
-       <p>© 2026 홍길동</p>
-    </footer>
+  <main>
+    <section>
+      <h2>자기소개</h2>
+      <p><a href="#contact">연락하기로 바로 가기</a></p>
+      <p>개발을 처음 배우는 수강생입니다. 매일 커밋하는 것이 목표입니다.</p>
+      <h3>좋아하는 것</h3>
+      <ul>
+        <li>산책</li>
+        <li>김밥</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>앞으로 만들 것</h2>
+      <p>다음 단계부터 이 저장소에서 <strong>수강신청 프로젝트</strong>를 만듭니다. 과목 목록을 보고, 담고, 시간표가 겹치는지 검사하는 화면부터 시작합니다.</p>
+    </section>
+
+    <section id="contact">
+      <h2>연락하기</h2>
+      <!-- id는 label과 짝만 맞으면 되는 페이지 안 이름, name은 서버와 약속한 이름. 하는 일이 달라서 값이 달라도 된다 (일부러 c- 를 붙여 다르게 써 봄) -->
+      <form action="https://httpbin.org/post" method="post">
+        <p>
+          <label for="c-name">이름</label>
+          <input type="text" id="c-name" name="name" required>
+        </p>
+        <p>
+          <label for="c-email">이메일</label>
+          <input type="email" id="c-email" name="email" required>
+        </p>
+        <p>
+          <label for="c-type">문의 종류</label>
+          <select id="c-type" name="type">
+            <option value="project">프로젝트 제안</option>
+            <option value="question">질문</option>
+            <option value="etc">기타</option>
+          </select>
+        </p>
+        <p>
+          <label for="c-msg">내용</label><br>
+          <textarea id="c-msg" name="message" rows="5" cols="40" required></textarea>
+        </p>
+        <p><button type="submit">보내기</button></p>
+      </form>
+      <p>※ 연습용 폼입니다. 입력한 내용은 연습 서버(httpbin.org)로만 전송됩니다.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 홍길동</p>
+  </footer>
 </body>
 </html>
