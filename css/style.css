@@ -118,7 +118,7 @@ button {
 .table-wrap { overflow-x: auto; }
 
 /* 좁은 화면 (599px 이하): 파일 맨 아래 */
-@media (max-width: 599px) {
+/*@media (max-width: 599px) {
   header {
     flex-direction: column;
     align-items: flex-start;
@@ -127,3 +127,4 @@ button {
   }
   nav ul { flex-wrap: wrap; }
 }
+  */
